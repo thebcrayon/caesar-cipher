@@ -1,5 +1,5 @@
 def caesar_cipher(string = 'Missing arguments', number_shift = 0)
-  # Need a 2D array to hold current letter as an integer and if it's capitalized
+  # Need a 2-D array to hold current letter as an integer and if it's capitalized
   original_as_integers = string.split('').map do |letter|
     [get_index_by_char(letter), is_cap?(letter)]
   end
